@@ -5,6 +5,8 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "About"
-    url: 
+    url: /about/
   - title: "Tags"
     url: /tags/
+  - title: "Sitemap"
+    url: /sitemap/
