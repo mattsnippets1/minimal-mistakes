@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Mattsnippets - Matt's developer blog"
+title                    : "Mattsnippets"
 title_separator          : "-"
 name                     : "Mate Meszaros"
 description              : "Matt's developer blog and portfolio site"
