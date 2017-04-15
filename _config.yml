@@ -81,7 +81,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I'm a software developer."
   location         : "Hungary"
-  email            :
+  email            : info@mattsnippets.com
   uri              :
   bitbucket        :
   codepen          :
