@@ -80,7 +80,7 @@ author:
   name             : "Mate Meszaros"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I'm a software developer."
-  location         : ""
+  location         : "Hungary"
   email            :
   uri              :
   bitbucket        :
@@ -148,9 +148,8 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: ""
+excerpt_separator: <!--more-->
 incremental: false
-
 
 # Markdown Processing
 kramdown:
