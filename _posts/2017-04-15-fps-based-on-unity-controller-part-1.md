@@ -8,7 +8,7 @@ I decided to create a first person shooter prototype, a "base" which I can use i
 I took Unity's **Shooting with Raycasts** tutoral project as a basis for my sandbox. I could have implemented an FPS controller from scratch but this time I have deiced to go with Unity's out of the box version. I may change my mind later on.   
 After playing around with the controls a bit I did a quick fix: the player's weapon was clipping through walls and this was easily solved by creating a Gun layer then adding the Gun object and its children to it. I created another camera and added it as a child of FirstPersonCharacter. This cam has Clear Flags set to Depth only, Culling Mask set to Gun and Depth set to a bigger value than the original main cam's. This way the weapon still clips into the wall but it seems like it doesn't. I disabled a the FOV Kick on the FPS Controller, because it only h andles one camera so there was an odd glitch when the two rendered weapons were misaligned.
 
-![Second cam settings](/assets/images/second-cam-settings.png){: .align-center}
+![Second cam settings](/assets/images/second-cam-settings.PNG){: .align-center}
 *Second cam settings*
 {: .text-center}
 
