@@ -46,11 +46,7 @@ public class CrouchController : MonoBehaviour
     private bool isCrouching = false;
 
     private void FixedUpdate()
-    {
-        Vector3 camPosition = transform.position;
-        Vector3 standCamPosition = new Vector3(camPosition.x, camStandingHeight, camPosition.z);
-        Vector3 crouchCamPosition = new Vector3(camPosition.x, camCrouchingHeight, camPosition.z);
-
+    {        
         if (Input.GetButtonDown("Crouch"))
         {
             isCrouchTransitionInProgress = true;
@@ -71,6 +67,10 @@ public class CrouchController : MonoBehaviour
 
         if (isCrouchTransitionInProgress)
         {
+		    Vector3 camPosition = transform.position;
+            Vector3 standCamPosition = new Vector3(camPosition.x, camStandingHeight, camPosition.z);
+            Vector3 crouchCamPosition = new Vector3(camPosition.x, camCrouchingHeight, camPosition.z);
+			
             if (isCrouching)
             {
                 CamLerpToPosition(camPosition, crouchCamPosition);
