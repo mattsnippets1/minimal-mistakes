@@ -67,10 +67,10 @@ public class CrouchController : MonoBehaviour
 
         if (isCrouchTransitionInProgress)
         {
-		    Vector3 camPosition = transform.position;
+            Vector3 camPosition = transform.position;
             Vector3 standCamPosition = new Vector3(camPosition.x, camStandingHeight, camPosition.z);
             Vector3 crouchCamPosition = new Vector3(camPosition.x, camCrouchingHeight, camPosition.z);
-			
+            
             if (isCrouching)
             {
                 CamLerpToPosition(camPosition, crouchCamPosition);
