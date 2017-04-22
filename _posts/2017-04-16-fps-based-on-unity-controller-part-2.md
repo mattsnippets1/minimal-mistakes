@@ -1,7 +1,7 @@
 ---
 title:  "FPS based on Unity's FPS Controller Part 2 - Crouching continued + shooting tweaks"
 date:   2017-04-16 20:30:00 +0200
-tags: FPS movement controller
+tags: FPS movement controller weapon
 ---
 I continued the implementation of the FPS controller with some fixes to crouch mechanics.
 <!--more-->
