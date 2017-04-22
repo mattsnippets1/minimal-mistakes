@@ -30,7 +30,7 @@ Instantiate(hitMarker, hit.point, Quaternion.identity);
 {% endhighlight %}   
 
 
-![Hit marker spheres after some shots](/assets/images/red-hit-markers.PNG){: .align-center}
+![Hit marker spheres after some shots](http://www.mattsnippets.com/assets/images/red-hit-markers.PNG){: .align-center}
 *Hit marker spheres after some shots*
 {: .text-center}
 
