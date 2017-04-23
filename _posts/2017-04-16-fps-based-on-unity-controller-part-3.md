@@ -16,7 +16,7 @@ private Quaternion CalculateBulletSpread()
     Quaternion fireRotation = Quaternion.LookRotation(transform.forward);
     Quaternion randomRotation = Random.rotation;
     float currentSpread = Mathf.Lerp(.0f, maxBulletSpreadAngle, fireTime / timeUntilMaxSpreadAngle);
-    Quaternion.RotateTowards(fireRotation, randomRotation, Random.Range(.0f, currentSpread));
+    fireRotation = Quaternion.RotateTowards(fireRotation, randomRotation, Random.Range(.0f, currentSpread));
 
     return fireRotation;
 }
@@ -125,7 +125,7 @@ public class RaycastShoot : MonoBehaviour
         Quaternion fireRotation = Quaternion.LookRotation(transform.forward);
         Quaternion randomRotation = Random.rotation;
         float currentSpread = Mathf.Lerp(.0f, maxBulletSpreadAngle, fireTime / timeUntilMaxSpreadAngle);
-        Quaternion.RotateTowards(fireRotation, randomRotation, Random.Range(.0f, currentSpread));
+        fireRotation = Quaternion.RotateTowards(fireRotation, randomRotation, Random.Range(.0f, currentSpread));
 
         return fireRotation;
     }
