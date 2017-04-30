@@ -5,6 +5,8 @@ tags: FPS controller weapon
 ---
 Different weapons are now available through inheritance, switching between guns is also possible.
 <!--more-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KzkZJARIeuQ?rel=0" frameborder="0" allowfullscreen></iframe><br>
 I continued the implementation of weapon logic by creating an abstract base class called **Weapon** and three classes inheriting from it: **SemiAutomatic**, **Automatic** and **Shotgun**. I took most of the generic shooting logic found in the former **RaycastShoot** class - which is now called **WeaponManager** - and moved it to **Weapon**. **WeaponManager** checks for the fire button held down (in the case of a shotgun or automatic weapon) or the fire button pressed once (in the case of semi-automatic guns). It calls **Weapon**'s **Shoot()** method with a nullable value of time elapsed since firing (which is required for automatic rifle bullet spread).
 
 The rest of the logic is now found in **Weapon**: check if the weapon can be fired again, handling the raycast results and bullet spread calculation. The only functionality which currently differs between child classes is the override of **CalculateShot()** abstract method. Of course, there might be more than one shotgun or pistol in game. The instances of ScriptableObject **GunStats** are used as a drag-and-drop data storage for the different weapons. Let's say we want to replace a smaller pistol with a magnum which has higher damage and longer range, we just create a new **GunStats** for magnum and drag it onto the Pistol gameobject to replace the "small pistol" **GunStats**.
