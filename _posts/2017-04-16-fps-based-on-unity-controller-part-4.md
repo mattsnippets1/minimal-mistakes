@@ -181,6 +181,8 @@ class Shotgun : Weapon
 
 One more addition to **WeaponManager** is the weapon switching logic. Now the player can switch between weapons using the mouse wheel. This is acquired via activating and deactivating the relevant gameobjects. Current code of **WeaponManager**:
 
+[Copy code snippet](#link){: .btn}  
+
 {% highlight c# %}
 
 using UnityEngine;
