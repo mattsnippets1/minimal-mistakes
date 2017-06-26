@@ -13,7 +13,7 @@ I tried to organize the code into separate components and I'm not 100% satisfied
 
 The board gameobject consists of tiles and each tile contains a gamepiece from six different colours. The board has a script attached to it (which is called - surprise - **Board**). It has some parameters configurable via the editor (width, height, border of play area, switch speed). It also runs the main game logic: setting up the board by initializing all **Tile** objects and filling it with random game pieces is managed by this script along with the game piece switching which is triggered via mouse events.
 
-At the start of the scene the board is generated such that it contains no matches. This is achieved by the **FillAtStart()** method which generates the pieces one by one and then checks if the piece creates a match in its row or column. If it does, the piece is removed and another random piece is generated instead. I know it's not efficient at the moment, a pool should be added to the random generator so a piece which created a match won't be picked again. This is going to be one of the improvements next time.
+At the start of the scene the board is generated such that it contains no matches. This is achieved by the **FillAtStart()** method which generates the pieces one by one and then checks if the piece creates a match in its row or column. If it does, the piece is removed and another random piece is generated instead. A pool could have been added to the random generator but I counted the iterations and there's no significant difference (not with a 9x9 board at least).
 
 [Copy code snippet](#link){: .btn}  
 
