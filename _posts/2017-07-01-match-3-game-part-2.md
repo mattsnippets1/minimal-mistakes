@@ -10,7 +10,7 @@ While the column slide effect was already included in the previous version it wo
 
 Another new feature is the introduction of obstacle tiles. The player cannot interact with these and they block gamepieces. They can be used to create a more interesting level shape. The **Tile** class got a brand new **TileType** enum which currently contains Basic and Obstacle. Gamepiece fill and column slide now only work if the tile is not an obstacle. **Board** also got an array containing **PresetTile** structures so it is much easier to set up a starting board state from the editor.
 
-![Obstacle tiles]({{site.url}}/assets/images/obstacle-tiles.PNG){: .align-center}
+![Obstacle tiles]({{site.url}}/assets/images/obstacle-tiles.png){: .align-center}
 *Obstacle tiles*
 {: .text-center}
 
