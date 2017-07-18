@@ -1,7 +1,7 @@
 ---
 title:  "Match 3 game Part 1 - Basic match 3 implementation"
 date:   2017-06-24 13:00:00 +0200
-tags: Match3
+tags: match3
 ---
 In the last two weeks I have started another project - the implementation of a 2D match 3 game similar to Bejeweled or Candy Crush Saga.
 <!--more-->

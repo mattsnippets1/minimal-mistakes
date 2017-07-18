@@ -1,7 +1,7 @@
 ---
 title:  "Match 3 game Part 2 - Obstacles and bombs"
 date:   2017-07-01 10:00:00 +0200
-tags: Match3
+tags: match3
 ---
 New elements have been added to the game: bomb pieces and indestructible obstacle tiles.
 <!--more-->
