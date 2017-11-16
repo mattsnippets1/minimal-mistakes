@@ -28,9 +28,9 @@
 			document.getElementById('prompt').innerHTML = e.toString();
 		}
 		
-		window.onload = function() {
+		window.addEventListener("load", function(event) {
 			Unity.call('CloseWebView');
-		};
+		});
 	</script>
 </head>
 <body>
