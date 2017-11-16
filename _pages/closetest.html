@@ -20,7 +20,7 @@
 			}
 			
 			window.addEventListener("load", function(event) {
-				window.setTimeout(Unity.call('CloseWebView'), 2000);
+				window.setTimeout(function() { Unity.call('CloseWebView'); }, 3000);
 			});
 		</script>
 	</head>
