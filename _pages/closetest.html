@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>	
+	<style>
+            p
+            {
+                font-size:      40px;
+            }
+			
+			div	
+			{
+                font-size:      40px;
+            }			
+	</style>
 	<script type="text/javascript">
 			if (typeof(Unity) === 'undefined') {
 				Unity = {
@@ -12,9 +23,16 @@
 					}
 				};
 			}
+
+		window.onerror = function(e) {
+			document.getElementById('prompt').innerHTML = e.toString();
+		}
 	</script>
 </head>
 <body>
 <p><a href="javascript:void(0)" onclick="Unity.call('CloseWebView');">[Send Message!]</a></p>
+<div id='prompt'>
+    
+</div>
 </body>
 </html>
