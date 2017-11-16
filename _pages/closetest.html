@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!--<script type="text/javascript">
-		window.onload = function() {
-			Unity.call('CloseWebView');
-		};
-	</script>-->
+<head>	
+	<script type="text/javascript">
+			if (typeof(Unity) === 'undefined') {
+				Unity = {
+					call: function(msg) {
+						var iframe = document.createElement('IFRAME');
+						iframe.setAttribute('src', 'unity:' + msg);
+						document.documentElement.appendChild(iframe);
+						document.documentElement.removeChild(iframe);
+					}
+				};
+			}
+	</script>
 </head>
 <body>
 <p><a href="javascript:void(0)" onclick="Unity.call('CloseWebView');">[Send Message!]</a></p>
