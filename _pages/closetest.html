@@ -13,20 +13,24 @@
             }			
 	</style>
 	<script type="text/javascript">
-			if (typeof(Unity) === 'undefined') {
-				Unity = {
-					call: function(msg) {
-						var iframe = document.createElement('IFRAME');
-						iframe.setAttribute('src', 'unity:' + msg);
-						document.documentElement.appendChild(iframe);
-						document.documentElement.removeChild(iframe);
-					}
-				};
-			}
+		if (typeof(Unity) === 'undefined') {
+			Unity = {
+				call: function(msg) {
+					var iframe = document.createElement('IFRAME');
+					iframe.setAttribute('src', 'unity:' + msg);
+					document.documentElement.appendChild(iframe);
+					document.documentElement.removeChild(iframe);
+				}
+			};
+		}
 
 		window.onerror = function(e) {
 			document.getElementById('prompt').innerHTML = e.toString();
 		}
+		
+		window.onload = function() {
+			Unity.call('CloseWebView');
+		};
 	</script>
 </head>
 <body>
