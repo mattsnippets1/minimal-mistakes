@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>	
-	<style>
-            p
-            {
-                font-size:      40px;
-            }
+	<head>	
+		<style>
+				p
+				{
+					font-size: 50px;
+				}	
+		</style>
+		<script type="text/javascript">
+			if (typeof(Unity) === 'undefined') {
+				Unity = {
+					call: function(msg) {
+						var iframe = document.createElement('IFRAME');
+						iframe.setAttribute('src', 'unity:' + msg);
+						document.documentElement.appendChild(iframe);
+						document.documentElement.removeChild(iframe);
+					}
+				};
+			}
 			
-			div	
-			{
-                font-size:      40px;
-            }			
-	</style>
-	<script type="text/javascript">
-		if (typeof(Unity) === 'undefined') {
-			Unity = {
-				call: function(msg) {
-					var iframe = document.createElement('IFRAME');
-					iframe.setAttribute('src', 'unity:' + msg);
-					document.documentElement.appendChild(iframe);
-					document.documentElement.removeChild(iframe);
-				}
-			};
-		}
-
-		window.onerror = function(e) {
-			document.getElementById('prompt').innerHTML = e.toString();
-		}
-		
-		window.addEventListener("load", function(event) {
-			Unity.call('CloseWebView');
-		});
-	</script>
-</head>
-<body>
-<p><a href="javascript:void(0)" onclick="Unity.call('CloseWebView');">[Send Message!]</a></p>
-<div id='prompt'>
-    
-</div>
-</body>
+			window.addEventListener("load", function(event) {
+				window.setTimeout(Unity.call('CloseWebView'), 2000);
+			});
+		</script>
+	</head>
+	<body>
+		<p>Successful payment</p>
+	</body>
 </html>
