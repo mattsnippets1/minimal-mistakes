@@ -8,7 +8,7 @@ I created a new class for particle management, and two others for switching game
 
 I had to fix a minor problem in **MatchFinder** code: color bombs were still considered valid as a starting piece in a match. An extra check solved this issue.
 
-I wasn't really pleased with particle creation code all over the place in **PieceManager** so I wrote a completely new class for this functionality. **ParticleManager** is attached to the **Board** GameObject, can be toggled by a property and has a **CreateExplosion()** method for instantiating explosion prefabs with a given color.
+I wasn't really pleased with particle creation code all over the place in **PieceManager** so I wrote a completely new class for this functionality. **ParticleManager** is attached to the **Board** GameObject, can be toggled by a property and has a **CreateExplosion()** method for instantiating explosion prefabs with a given color.()
 
 [Copy code snippet](#link){: .btn}  
 
