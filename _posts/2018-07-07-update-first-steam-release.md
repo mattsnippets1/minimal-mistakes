@@ -1,6 +1,7 @@
 ---
 title:  "Update - First game released on Steam"
 date:   2018-07-07 20:00:00 +0200
+tags: corpsemob
 ---
 I haven't posted to this blog for quite a while, here's some update.
 <!--more-->

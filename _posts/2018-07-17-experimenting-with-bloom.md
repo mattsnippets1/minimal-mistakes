@@ -1,7 +1,7 @@
 ---
 title:  "Experimenting with bloom"
 date:   2018-07-17 20:00:00 +0200
-tags: bloom postprocessing graphics
+tags: bloom postprocessing graphics corpsemob
 ---
 I have decided to explore the possibilities of the Unity post processing stack and experiment a bit.
 <!--more-->
