@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Blog"
-    url:
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Blog"
+    url:
   - title: "About"
     url: /about/
   - title: "Tags"
