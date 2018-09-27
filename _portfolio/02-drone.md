@@ -27,6 +27,8 @@ gallery:
 
 A sci-fi FPS/stealth game demo where you have to destroy drones (or be destroyed).   
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7jlped-vVbE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Feature highlight:
 - 3 weapons with animations and volumetric laser projectiles
 - Drones with finite state machine AI and navmesh
