@@ -11,4 +11,4 @@ Although I haven't been so active on this site lately that doesn't mean I was do
 Currently I'm creating prototypes for some new ideas, while working on patches, refactoring and some new content for Corpse Mob. I won't open source the whole code for this project but I'm planning to post some lessons learned/refactoring experiences to the site over the next few months.
 
 Here's a release trailer:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/422ky0VJik4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rzpQCv7xlqQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
