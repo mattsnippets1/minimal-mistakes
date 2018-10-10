@@ -8,3 +8,5 @@ main:
     url: /about/
   - title: "Tags"
     url: /tags/
+  - title: "All Posts"
+    url: /archive/
