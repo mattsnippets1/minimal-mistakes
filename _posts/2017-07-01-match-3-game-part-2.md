@@ -14,9 +14,7 @@ Another new feature is the introduction of obstacle tiles. The player cannot int
 *Obstacle tiles*
 {: .text-center}
 
-The biggest addition since the last version is the inclusion of bombs. I considered different approaches and finally decided to implement bombs as separate GameObjects attached to gamepieces. They have their own sprite renderers and **Bomb** scripts. This script doesn't contain much: the type of the bomb, an **Init()** method and some code to automatically replace the bomb sprite if the bombtype is altered in the editor. The sprites are only simple markers which appear on a layer above the gamepieces. This way I can see immediately that the gamepiece has a certain kind of attached bomb.
-
-[Copy code snippet](#link){: .btn}  
+The biggest addition since the last version is the inclusion of bombs. I considered different approaches and finally decided to implement bombs as separate GameObjects attached to gamepieces. They have their own sprite renderers and **Bomb** scripts. This script doesn't contain much: the type of the bomb, an **Init()** method and some code to automatically replace the bomb sprite if the bombtype is altered in the editor. The sprites are only simple markers which appear on a layer above the gamepieces. This way I can see immediately that the gamepiece has a certain kind of attached bomb.   
 
 {% highlight c# %}
 
@@ -67,9 +65,7 @@ public enum BombType
 
 {% endhighlight %}
 
-To make the bombs actually remove gamepieces the **Board** class has been extended with some extra code. In **ClearCoroutine()** a new method called **ExplodeBombs()** is invoked. This finds all the bombs in the current matching pieces then calls **GetExplodedPieces()** which returns with a collection of pieces destroyed by the given bomb type (to get the pieces, three new methods are used from **PieceManager**, namely **GetPieceBlock()**, **GetPieceColumn()** and **GetPieceRow()**). The bombs trigger each other so a chain reaction can occur between bombs. That's why **ExplodeBombs()** is recursively called until no more explosions can occur within the effected area. The collection of exploded pieces is then included in the collection of pieces to be removed. Here is the code of **ExplodeBombs()** and **GetExplodedPieces()**.
-
-[Copy code snippet](#link){: .btn}  
+To make the bombs actually remove gamepieces the **Board** class has been extended with some extra code. In **ClearCoroutine()** a new method called **ExplodeBombs()** is invoked. This finds all the bombs in the current matching pieces then calls **GetExplodedPieces()** which returns with a collection of pieces destroyed by the given bomb type (to get the pieces, three new methods are used from **PieceManager**, namely **GetPieceBlock()**, **GetPieceColumn()** and **GetPieceRow()**). The bombs trigger each other so a chain reaction can occur between bombs. That's why **ExplodeBombs()** is recursively called until no more explosions can occur within the effected area. The collection of exploded pieces is then included in the collection of pieces to be removed. Here is the code of **ExplodeBombs()** and **GetExplodedPieces()**.   
 
 {% highlight c# %}
 

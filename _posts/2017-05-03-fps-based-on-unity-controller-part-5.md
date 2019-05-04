@@ -11,9 +11,7 @@ Until now, the simple test level from the original Unity tutorial was enough for
 *Test map scene*
 {: .text-center}
 
-While moving around and trying jumping, crouching, slope angles and stuff I noticed a serious issue: I forgot to make my crouch compatible with standing on top of objects so the character would crouch into a box or stairs if it was standing on top of them. To fix this issue, I had to modify the calculation of the camera's standing and crouching positions in **CrouchController**. Now the character controller's current y position is added to the required camera height like this:
-
-[Copy code snippet](#link){: .btn}  
+While moving around and trying jumping, crouching, slope angles and stuff I noticed a serious issue: I forgot to make my crouch compatible with standing on top of objects so the character would crouch into a box or stairs if it was standing on top of them. To fix this issue, I had to modify the calculation of the camera's standing and crouching positions in **CrouchController**. Now the character controller's current y position is added to the required camera height like this:   
 
 {% highlight c# %}
 
@@ -26,9 +24,7 @@ Vector3 crouchCamPosition = new Vector3(camPosition.x, characterController.trans
 
 {% endhighlight %}
 
-The spherecast used to prevent standing up under obstacles also caused problems. The sphere collided with the gameobject under the player's feet so he could not stand up after crouching on top of something. I fixed this by casting the sphere from the center of the crouching controller and casting it with the limit of a maximum distance that allows standing up under objects which have a slightly higher y position than the player's height.
-
-[Copy code snippet](#link){: .btn}  
+The spherecast used to prevent standing up under obstacles also caused problems. The sphere collided with the gameobject under the player's feet so he could not stand up after crouching on top of something. I fixed this by casting the sphere from the center of the crouching controller and casting it with the limit of a maximum distance that allows standing up under objects which have a slightly higher y position than the player's height.   
 
 {% highlight c# %}
 
@@ -45,9 +41,7 @@ if (isCrouching)
 
 Another undertaking was fixing controller support. I have only tested the code with an Xbox 360 controller on Windows so it might not be functional on other OS/with another controller (I'm sure that the solution is similar in those cases, though). In the **FirstPersonController** class code the script for running still contained left shift as the only running button. I had to change that to **GetButton("Run")**. This way all the input buttons defined as "Run" would trigger running. I set the left shoulder button as the controller's running input. Jump and crouch could be set up in a similar fashion so the character now jumps with the Y and crouches with the B controller buttons.   
 
-I also changed the mouse look logic, adding some extra code to **MouseLook** class. The game now checks for a connected joystick every time **LookRotation()** method is invoked and if it finds one then the controller axes are used instead of the mouse to rotate the camera. Here's the current code, **xAxis** and **yAxis** are declared along with the other class fields at the top of the code.
-
-[Copy code snippet](#link){: .btn}  
+I also changed the mouse look logic, adding some extra code to **MouseLook** class. The game now checks for a connected joystick every time **LookRotation()** method is invoked and if it finds one then the controller axes are used instead of the mouse to rotate the camera. Here's the current code, **xAxis** and **yAxis** are declared along with the other class fields at the top of the code.   
 
 {% highlight c# %}
 
@@ -99,9 +93,7 @@ I wanted to use the right trigger of the controller as the primary fire button a
 
 I created a static class: **JoystickAxisDataManager** which has a private dictionary containing all the required axis names and a float value stored with them. To use this class the static method **AxisGetButtonDown()** has to be called with the argument of the axis name. If the dictionary has no key corresponding to the axis name, then the class queries the current value for the axis, stores it in the dictionary then returns it to the caller.
 
-From now on, each time the get button down is invoked again it compares the current value to the value stored in the dictionary. If it's different it returns the new value and stores it in the dictionary. If it's the stame, that means "no change" so it simply returns 0. It is important to only call **AxisGetButtonDown()** once per update so if the return value is required in multiple parts of the code it is best to store it in a variable and work with that in the update.
-
-[Copy code snippet](#link){: .btn}  
+From now on, each time the get button down is invoked again it compares the current value to the value stored in the dictionary. If it's different it returns the new value and stores it in the dictionary. If it's the stame, that means "no change" so it simply returns 0. It is important to only call **AxisGetButtonDown()** once per update so if the return value is required in multiple parts of the code it is best to store it in a variable and work with that in the update.   
 
 {% highlight c# %}
 

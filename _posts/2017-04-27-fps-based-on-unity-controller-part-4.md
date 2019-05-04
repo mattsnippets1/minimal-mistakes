@@ -13,8 +13,6 @@ The rest of the logic is now found in **Weapon**: check if the weapon can be fir
 
 I attached the three weapon subclass scripts to gameobjects which are now attached to the **FPSController**'s **GunHolder** object. I grabbed some weapon models from the asset store (Free Guns Pack) and also added sound effects for the shots which are played via each gun's own AudioSource. Here's the code for **Weapon**:
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 using UnityEngine;
@@ -114,8 +112,6 @@ public abstract class Weapon : MonoBehaviour
 
 And here are the subclasses:
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 using UnityEngine;
@@ -133,8 +129,6 @@ class SemiAutomatic : Weapon
 
 {% endhighlight %}
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 using UnityEngine;
@@ -151,8 +145,6 @@ class Automatic : Weapon
 }
 
 {% endhighlight %}
-
-[Copy code snippet](#link){: .btn}  
 
 {% highlight c# %}
 
@@ -179,9 +171,7 @@ class Shotgun : Weapon
 
 {% endhighlight %}
 
-One more addition to **WeaponManager** is the weapon switching logic. Now the player can switch between weapons using the mouse wheel. This is acquired via activating and deactivating the relevant gameobjects. Current code of **WeaponManager**:
-
-[Copy code snippet](#link){: .btn}  
+One more addition to **WeaponManager** is the weapon switching logic. Now the player can switch between weapons using the mouse wheel. This is acquired via activating and deactivating the relevant gameobjects. Current code of **WeaponManager**:   
 
 {% highlight c# %}
 

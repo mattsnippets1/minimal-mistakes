@@ -16,9 +16,7 @@ Integ tests and unit tests were also added to follow the changes introduced by c
 
 **AddScore** event is fired in **PieceManager**'s **AddScore()** method which gets the score value from the removed piece, adds a bomb score value if it has a bomb attached and also multiplies it with a cascade multiplier. Multiplier is incremented after every consecutive match created in a single move.
 
-If a score limit is set on the current level, a **GameOverWin** event is fired by **GameManager** upon reaching this target score along with a message to display on the GUI.
-
-[Copy code snippet](#link){: .btn}  
+If a score limit is set on the current level, a **GameOverWin** event is fired by **GameManager** upon reaching this target score along with a message to display on the GUI.   
 
 {% highlight c# %}
 
@@ -87,8 +85,6 @@ public class GameManager : MonoBehaviour
 ![Obstacle tiles]({{site.url}}/assets/images/you-win-gui.PNG){: .align-center}
 *Target score reached*
 {: .text-center}
-
-[Copy code snippet](#link){: .btn}  
 
 {% highlight c# %}
 

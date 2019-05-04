@@ -13,9 +13,7 @@ I tried to organize the code into separate components and I'm not 100% satisfied
 
 The board gameobject consists of tiles and each tile contains a gamepiece from six different colours. The board has a script attached to it (which is called - surprise - **Board**). It has some parameters configurable via the editor (width, height, border of play area, switch speed). It also runs the main game logic: setting up the board by initializing all **Tile** objects and filling it with random game pieces is managed by this script along with the game piece switching which is triggered via mouse events.
 
-At the start of the scene the board is generated such that it contains no matches. This is achieved by the **FillAtStart()** method which generates the pieces one by one and then checks if the piece creates a match in its row or column. If it does, the piece is removed and another random piece is generated instead. A pool could have been added to the random generator but I counted the iterations and there's no significant difference (not with a 9x9 board at least).
-
-[Copy code snippet](#link){: .btn}  
+At the start of the scene the board is generated such that it contains no matches. This is achieved by the **FillAtStart()** method which generates the pieces one by one and then checks if the piece creates a match in its row or column. If it does, the piece is removed and another random piece is generated instead. A pool could have been added to the random generator but I counted the iterations and there's no significant difference (not with a 9x9 board at least).   
 
 {% highlight c# %}
 
@@ -53,9 +51,7 @@ private void FillAtStart()
 
 **PieceManager** handles the 2D array containing all **Piece** object references. This class can create, place and remove pieces. The piece array is encapsulated within a wrapper class to avoid changing the value of an array element by accident. Therefore, the wrapper's indexer is readonly and array elements can be only assigned through a setter method. Unfortunately, that doesn't mean that the objects within the array are protected I'm only using this approach to avoid accidentally overwriting an array element from another class.
 
-**ColumnManager** creates the sliding effect which is seen when pieces are removed from the board. Currently there's no collapse for the new pieces generated after a match but I'm planning to introduce that as well. **SlideColumnAt()** is invoked on all the columns with pieces removed. The method searches for null pieces in the column then iterates through all of the pieces above to find the next non-empty piece which is moved down to replace the empty game piece. This process is repeated until all the non-null pieces fall into place.
-
-[Copy code snippet](#link){: .btn}  
+**ColumnManager** creates the sliding effect which is seen when pieces are removed from the board. Currently there's no collapse for the new pieces generated after a match but I'm planning to introduce that as well. **SlideColumnAt()** is invoked on all the columns with pieces removed. The method searches for null pieces in the column then iterates through all of the pieces above to find the next non-empty piece which is moved down to replace the empty game piece. This process is repeated until all the non-null pieces fall into place.   
 
 {% highlight c# %}
 

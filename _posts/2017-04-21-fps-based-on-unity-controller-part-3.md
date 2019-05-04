@@ -7,8 +7,6 @@ The latest changes to the FPS controller include bullet spread over time, more e
 <!--more-->
 To make shooting a little more interesting, I added some bullet spread logic to the current code. A new method called **CalculateBulletSpread()** is used to bring some randomness into the direction of the shots. It essentially takes the transform.forward look rotation then rotates it to a random rotation with a max degrees delta of **currentSpread**. **currentSpread** itself is calculated by lerping between 0 and **maxBulletSpreadAngle** over the elapsed time since the fire button has been pressed down divided by the **timeUntilMaxSpreadAngle** variable. The original forward vector of the shot is multiplied by the returned Quaternion. This causes the bullet spread to reach maximum value over the time window previously set (the weapon getting more and more inaccurate while firing). Here's some code:
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 private Quaternion CalculateBulletSpread()
@@ -25,9 +23,7 @@ private Quaternion CalculateBulletSpread()
 
 The previous fire rate calculation from the original Unity code used Time.time to check if the weapon can be fired again. I don't like the idea of a value constantly growing while the game is running so I chose another way to solve this problem. A bool named **readyToFire** is used now to indicate whether the gun can be fired once again. Every time the weapon is fired it is set to false and the **SetReadyToFire()** method is invoked with a latency of **fireRate**. This method then re-enables **readyToFire** and the gun van be fired in the next update.
 
-I somewhat changed the layout of the shooting code by refactoring and reorganizing larger blocks into separate methods. Here's the current version:
-
-[Copy code snippet](#link){: .btn}  
+I somewhat changed the layout of the shooting code by refactoring and reorganizing larger blocks into separate methods. Here's the current version:   
 
 {% highlight c# %}
 

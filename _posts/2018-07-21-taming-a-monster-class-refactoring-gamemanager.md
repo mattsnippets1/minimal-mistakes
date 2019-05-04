@@ -1,7 +1,7 @@
 ---
 title:  "Taming a monster class - Refactoring GameManager"
 date:   2018-07-21 16:00:00 +0200
-tags: refactoring gameplay corpsemob
+tags: refactoring gameplay
 ---
 Despite trying to avoid it, my code has fallen victim to the fearsome **GameManager** class. Here's how I managed to fix it (or make it better at least).
 <!--more-->

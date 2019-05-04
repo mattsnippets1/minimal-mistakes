@@ -8,9 +8,7 @@ I created a new class for particle management, and two others for switching game
 
 I had to fix a minor problem in **MatchFinder** code: color bombs were still considered valid as a starting piece in a match. An extra check solved this issue.
 
-I wasn't really pleased with particle creation code all over the place in **PieceManager** so I wrote a completely new class for this functionality. **ParticleManager** is attached to the **Board** GameObject, can be toggled by a property and has a **CreateExplosion()** method for instantiating explosion prefabs with a given color.
-
-[Copy code snippet](#link){: .btn}  
+I wasn't really pleased with particle creation code all over the place in **PieceManager** so I wrote a completely new class for this functionality. **ParticleManager** is attached to the **Board** GameObject, can be toggled by a property and has a **CreateExplosion()** method for instantiating explosion prefabs with a given color.   
 
 {% highlight c# %}
 
@@ -56,9 +54,7 @@ public class ParticleManager : MonoBehaviour
 
 Another addition was the class **PieceSwitcher**. **Board** contained all the logic required for switching pieces which has been moved to this new class. Now **Board** only has a **TrySwitch()** method which calls **PieceSwitcher**'s **SwitchPieces()** coroutine after some tests and a callback method **TrySwitchFinished()** passed as a delegate to **PieceSwitcher**. **PieceSwitcher** itself handles all the logic related to attempting a switch, reverting an unsuccessful one and creating bomb data if the switch should result in bomb creation.
 
-Using **AutoTester** to check for possible moves was a temporary solution and it was time to create a separate class for that task so I wrote **MoveFinder** and moved all the move checking logic to this separate class.
-
-[Copy code snippet](#link){: .btn}  
+Using **AutoTester** to check for possible moves was a temporary solution and it was time to create a separate class for that task so I wrote **MoveFinder** and moved all the move checking logic to this separate class.   
 
 {% highlight c# %}
 

@@ -11,8 +11,6 @@ To disallow crouching while jumping, I introduced another check in the CrouchCon
 
 I also tweaked the shooting mechanics a bit. In the previous implementation the player could occasionally hit himself by accident (e.g. while backpedaling). This was fixed with the use of a LayerMask. It could have been done by exposing a LayerMask variable in the editor and checking the required layers but I decided to go with the old-fashioned way and created the binary negation of the bitmask containing the **Player** and **Gun** layers (both layers are user defined):
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 int layerMask = ~LayerMask.GetMask("Gun", "Player");
@@ -20,8 +18,6 @@ int layerMask = ~LayerMask.GetMask("Gun", "Player");
 {% endhighlight %}
 
 I also added a hit marker object in the form of a small static red sphere which is instantiated at the point of raycast hit. This way debugging hit locations is much easier:
-
-[Copy code snippet](#link){: .btn}  
 
 {% highlight c# %}
 

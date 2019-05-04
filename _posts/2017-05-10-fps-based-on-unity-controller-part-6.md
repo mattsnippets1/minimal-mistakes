@@ -24,9 +24,7 @@ Climbing logic is divided between two classes: **ClimbController** attached to *
 *Invalid climbing scenario - box above player's head*
 {: .text-center}
 
-Here's the code of **ClimbController**:
-
-[Copy code snippet](#link){: .btn}  
+Here's the code of **ClimbController**:   
 
 {% highlight c# %}
 
@@ -99,9 +97,7 @@ public class ClimbController : MonoBehaviour
 
 If the conditions are all right, **CinematicCamManager**'s **TriggerClimbUpAnimation()** method is invoked. This resets the main cam rotation, disables the gun camera (otherwise some awkward gun movements and camera angles may occur during the climb animation), disables the character controller and enables the cinematic cam. The animation called "ClimbUp" is triggered after that. This essentially tilts the cam left, right and forward while it's also moving up and forward creating the illusion of climbing up on the side of the object.
 
-The animation has an event which invokes **MoveCharacterToCinematicPosition()**. This moves the controller to the cam's position (surprise), disables cinematic cam and enables gun cam then enables the controller itself.
-
-[Copy code snippet](#link){: .btn}  
+The animation has an event which invokes **MoveCharacterToCinematicPosition()**. This moves the controller to the cam's position (surprise), disables cinematic cam and enables gun cam then enables the controller itself.   
 
 {% highlight c# %}
 

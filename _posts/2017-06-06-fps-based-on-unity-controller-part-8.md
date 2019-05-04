@@ -13,9 +13,7 @@ Mob prefabs are simple capsules with a **HealthManager** and a **BasicAi** scrip
 
 Lesson learned: always check the number of arguments when using a layermask with raycast. I spent more than an hour debugging the code because the layermask didn't seem to work at all only to find out that the layermask was implicitly cast to a float and was considered as a distance value by the raycast method :D.
 
-**BasicAi** also has a **ShootTargets()** coroutine. This iterates over all the visible targets registered by the FOV script, instantiates a bullet prefab and rotates it towards the target. My decision to move the center of the player's character controller to its feet now proved to be problematic because using **LookAt()** on all axes made the bullet fly towards the feet and colliding with the floor. At the moment, the bullet's y position remains intact so the bullet does not change its vertical angle. The coroutine yields for **attackCooldown** seconds before firing again.
-
-[Copy code snippet](#link){: .btn}  
+**BasicAi** also has a **ShootTargets()** coroutine. This iterates over all the visible targets registered by the FOV script, instantiates a bullet prefab and rotates it towards the target. My decision to move the center of the player's character controller to its feet now proved to be problematic because using **LookAt()** on all axes made the bullet fly towards the feet and colliding with the floor. At the moment, the bullet's y position remains intact so the bullet does not change its vertical angle. The coroutine yields for **attackCooldown** seconds before firing again.   
 
 {% highlight c# %}
 
@@ -110,9 +108,7 @@ public class FieldOfView : MonoBehaviour
 
 {% endhighlight %}
 
-**Bullet** also has its own script. In **Update()** it moves the bullet with the given speed, if something else enters its trigger collider the bullet is destroyed (except when the other object is also a projectile). A reference is acquired to the target's **HealthManager** (if it has one) and its **Damage()** method is invoked with the bullet's damage.
-
-[Copy code snippet](#link){: .btn}  
+**Bullet** also has its own script. In **Update()** it moves the bullet with the given speed, if something else enters its trigger collider the bullet is destroyed (except when the other object is also a projectile). A reference is acquired to the target's **HealthManager** (if it has one) and its **Damage()** method is invoked with the bullet's damage.   
 
 {% highlight c# %}
 

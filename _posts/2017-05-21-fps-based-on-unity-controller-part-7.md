@@ -11,9 +11,7 @@ The concept for ladder climbing was to disable regular movement controls while t
 
 The class **LadderClimbController** has most of the logic for vertical climbing. In **Update()** it checks whether the player is leaving the ladder by jumping or climbing off or - on the contrary - climbing is currently off but the player collides with a ladder, he's facing the right direction and is moving on the vertical axis.
 
-While ladder climbing is enabled, **FirstPersonController**'s movement is turned off and the character only moves on the y axis, the movement vector multiplied by a climbing speed value. Here's the code of **LadderClimbController**:
-
-[Copy code snippet](#link){: .btn}  
+While ladder climbing is enabled, **FirstPersonController**'s movement is turned off and the character only moves on the y axis, the movement vector multiplied by a climbing speed value. Here's the code of **LadderClimbController**:   
 
 {% highlight c# %}
 

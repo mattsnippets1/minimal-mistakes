@@ -8,9 +8,7 @@ I have added bomb spawning logic to the code and also created some test solution
 
 Until now bombs could only be added to game pieces manually in the editor but I wanted to make them appear on matches of 4 or more pieces as it's required for real gameplay. **PieceManager** got extended with some new methods: **AttachBomb()**, **IsCornerMatch()** and **CreateBombData()**.
 
-Whenever a match is made during a switch it is analyzed by **CreateBombData()**. If the piece count in the match is greater than or equal to 4, a **BombData** instance is returned. **BombData** stores the information which is used a bit later in **ClearRefillCoroutine()** to create and attach bombs to the game pieces involved. **IsCornerMatch()** is used to decide the type of the new bomb (block bombs are created when pieces are matched in a T or L shape, otherwise a column or row bomb is created depending on the direction of the matching move).
-
-[Copy code snippet](#link){: .btn}  
+Whenever a match is made during a switch it is analyzed by **CreateBombData()**. If the piece count in the match is greater than or equal to 4, a **BombData** instance is returned. **BombData** stores the information which is used a bit later in **ClearRefillCoroutine()** to create and attach bombs to the game pieces involved. **IsCornerMatch()** is used to decide the type of the new bomb (block bombs are created when pieces are matched in a T or L shape, otherwise a column or row bomb is created depending on the direction of the matching move).   
 
 {% highlight c# %}
 

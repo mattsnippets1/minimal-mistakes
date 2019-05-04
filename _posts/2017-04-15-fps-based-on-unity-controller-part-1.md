@@ -22,8 +22,6 @@ To make the crouching player smaller I also set the height of the Character Cont
    
 It was also necessary to introduce a flag - isCrouchTransitionInProgress - so the lerp isn't applied constantly to cam position. This would mess up jumping and other movement with height changes. For now, this version is working but there is still much left to do e.g. disable crouch while jumping. Here's the code of the current CrouchController class:   
 
-[Copy code snippet](#link){: .btn}  
-
 {% highlight c# %}
 
 public class CrouchController : MonoBehaviour
