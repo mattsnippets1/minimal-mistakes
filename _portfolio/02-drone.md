@@ -1,5 +1,5 @@
 ---
-title: "Drone shooter"
+title: "Drone Shooter"
 date:   2017-08-10 20:00:00 +0200
 excerpt: "A sci-fi First Person Shooter game demo."
 header:

@@ -1,5 +1,5 @@
 ---
-title: "Mattsnippets Match 3"
+title: "Match 3"
 date:   2018-08-23 10:00:00 +0200
 excerpt: "A match 3 puzzle game similar to Bejeweled and Candy Crush Saga."
 header:
