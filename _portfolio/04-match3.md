@@ -25,6 +25,8 @@ gallery:
     alt: "Match 3 screenshot 6"
 ---
 
+**Disclaimer: This is an old project and contains obsolete/older code, please consider it outdated**
+
 A match 3 puzzle game similar to Bejeweled and Candy Crush Saga. The game is mainly targeted and optimized for mobile devices but it can be played on desktop or from a browser with a mouse as well. This demo features five playable levels with different winning and losing conditions, level selection and help screens.
 
 {% include gallery %}

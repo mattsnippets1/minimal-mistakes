@@ -25,6 +25,8 @@ gallery:
     alt: "Drone screenshot 6"
 ---
 
+**Disclaimer: This is an old project and contains obsolete/older code, please consider it outdated**
+
 A sci-fi FPS/stealth game demo where you have to destroy drones (or be destroyed).   
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7jlped-vVbE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
