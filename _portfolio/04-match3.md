@@ -32,8 +32,8 @@ A match 3 puzzle game similar to Bejeweled and Candy Crush Saga. The game is mai
 {% include gallery %}
 
 ## Download
-[Windows executable]({{ site.url }}/assets/download/match3base_desktop.zip)  
-[Android .apk]({{ site.url }}/assets/download/match3base.apk)  
+[Windows executable]({{ site.url }}/assets/download/mattsnippets_match_3_desktop.zip)  
+[Android .apk]({{ site.url }}/assets/download/mattsnippets_match_3.apk)  
 [WebGL online player]({{ site.url }}/webgl/match3base/index.html)
 
 ## Repository
