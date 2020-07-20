@@ -18,9 +18,6 @@ I also wanted to experiment with some stealth action possibilities that's the ma
 
 I won't go into technical details now but there were many lessons learned during the update process and I might post about some of the more interesting ones later on. Also, the codebase could use some refactoring and restructuring, that's the next thing I'm planning to sort out soon.   
 
-[Portfolio page]({{site.url}}/portfolio/02-drone/)   
-[Bitbucket repo](https://bitbucket.org/mattsnippets/fps_base)
-
 ## Update highlights
 * Added Unity Post-processing stack and some PP effects to scene
 * Changed the skybox and most of the textures

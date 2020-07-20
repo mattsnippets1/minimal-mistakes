@@ -42,7 +42,7 @@ A sci-fi FPS/stealth game demo where you have to destroy drones (or be destroyed
 {% include gallery %}
 
 ## Download
-[Windows executable]({{ site.url }}/assets/download/drone_desktop.zip)  
+[Windows executable]({{ site.url }}/assets/download/drone_desktop_202007.zip)  
 
 ## Repository
-[https://bitbucket.org/mattsnippets/fps_base](https://bitbucket.org/mattsnippets/fps_base)  
+[https://gitlab.com/mattsnippets/fps-base](https://gitlab.com/mattsnippets/fps-base)  
