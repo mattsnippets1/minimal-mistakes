@@ -133,6 +133,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/mate"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/mattsnippets"
 
 # Site Footer
 footer:
@@ -148,10 +151,10 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://gitlab.com/mattsnippets"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
-      url: "https://bitbucket.org/mattsnippets"
+      # url: "https://bitbucket.org/mattsnippets"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
