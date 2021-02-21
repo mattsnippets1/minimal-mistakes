@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Mattsnippets"
 title_separator          : "-"
 name                     : "Mate Meszaros"
-description              : "Matt's developer blog and portfolio site"
+description              : "Matt's developer blog and portfolio site. Portfolio showcase and (occasional) development blog created by Mate Meszaros."
 url                      : "http://www.mattsnippets.com"
 baseurl                  : ""
 repository               : mattsnippets1/mattsnippets1.github.io
