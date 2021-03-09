@@ -20,7 +20,7 @@ title                    : "Mattsnippets"
 title_separator          : "-"
 name                     : "Mate Meszaros"
 description              : "Matt's developer blog and portfolio site. Portfolio showcase and (occasional) development blog created by Mate Meszaros."
-url                      : "http://www.mattsnippets.com"
+url                      : "https://mattsnippets.com"
 baseurl                  : ""
 repository               : mattsnippets1/mattsnippets1.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
