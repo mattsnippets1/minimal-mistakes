@@ -41,11 +41,11 @@ An early alpha demo of Balance, a procedurally generated TPS game where you roam
 
 The assets are either freely available or from the asset store.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/stuzaWYxUl4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cydZWDkCZdM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 {% include gallery %}
 
 ## Balance links
-[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_202103.zip)
+[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_0.2.4.zip)
 ## Repository
 [https://gitlab.com/mattsnippets/balance](https://gitlab.com/mattsnippets/balance)  
