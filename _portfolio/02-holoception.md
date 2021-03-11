@@ -20,6 +20,8 @@ During my time as a developer at [Holonautic](https://www.holonautic.com) I work
 
 The arms of the protagonist are mapped to VR controllers which provides a unique feel of proprioception. Loads of weapons, fierce foes, bullet time and spilling ink. Available in Early Access on Steam and Oculus Store.
 
+*Engine: Unity -- Platform: VR (Oculus, HTC, Index)*
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PnJ1FLi5myE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 {% include gallery %}

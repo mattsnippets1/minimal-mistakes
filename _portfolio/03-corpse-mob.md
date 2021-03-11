@@ -27,6 +27,8 @@ gallery:
 
 Corpse Mob is my first game released on Steam. Apart from the graphics everything else in the game was created by me (design, programming, music, sfx, vfx). It is a fast paced old-school top down shooter with local co-op and some RPG elements.
 
+*Engine: Unity -- Platform: Windows*
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rzpQCv7xlqQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 {% include gallery %}

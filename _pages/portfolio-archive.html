@@ -1,12 +1,13 @@
 ---
-layout: archive
+layout: portfolio
 title: "Portfolio"
 permalink: /portfolio/
 author_profile: false
 ---
+
 <div class="grid__wrapper">
-  {% assign sorted_p = site.portfolio | sort:'path' %}
-	
+  {% assign sorted_p = site.portfolio | sort:'path' %}  
+  
   {% for post in sorted_p %}
     {% include archive-single.html type="grid" %}
   {% endfor %}

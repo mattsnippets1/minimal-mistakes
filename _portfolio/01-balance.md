@@ -27,6 +27,10 @@ gallery:
 
 An early alpha demo of Balance, a procedurally generated TPS game where you roam around a dark forest world controlling a golem, fighting huge, procedurally animated spiders and collect powerups. (The current build has no sound or music).
 
+*Engine: Unity -- Platform: Windows*
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cydZWDkCZdM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Feature highlight:
 - 3rd person character with keyboard + mouse controls and camera follow
 - Procedurally generated 3D terrain chunks based on seed input
@@ -39,9 +43,7 @@ An early alpha demo of Balance, a procedurally generated TPS game where you roam
 - Save-load system serializing world, player and inventory state into a file
 - Firing with auto-aim
 
-The assets are either freely available or from the asset store.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cydZWDkCZdM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+The assets are either freely available or have been purchased from the asset store.
 
 {% include gallery %}
 

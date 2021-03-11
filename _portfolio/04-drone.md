@@ -29,6 +29,8 @@ gallery:
 
 A sci-fi FPS/stealth game demo where you have to destroy drones (or be destroyed).   
 
+*Engine: Unity -- Platform: Windows*
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7jlped-vVbE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Feature highlight:

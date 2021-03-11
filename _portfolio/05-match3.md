@@ -29,6 +29,8 @@ gallery:
 
 A match 3 puzzle game similar to Bejeweled and Candy Crush Saga. The game is mainly targeted and optimized for mobile devices but it can be played on desktop or from a browser with a mouse as well. This demo features five playable levels with different winning and losing conditions, level selection and help screens.
 
+*Engine: Unity -- Platform: Windows, Mobile, WebGL*
+
 {% include gallery %}
 
 ## Download
