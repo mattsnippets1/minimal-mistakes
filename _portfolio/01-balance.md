@@ -29,7 +29,7 @@ An early alpha demo of Balance, a procedurally generated TPS game where you roam
 
 *Engine: Unity -- Platform: Windows*
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cydZWDkCZdM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RPt0iBip_KE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Feature highlight:
 - 3rd person character with keyboard + mouse controls and camera follow
@@ -48,6 +48,6 @@ The assets are either freely available or have been purchased from the asset sto
 {% include gallery %}
 
 ## Balance links
-[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_0.2.4.zip)
+[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_0.2.5.zip)
 ## Repository
 [https://gitlab.com/mattsnippets/balance](https://gitlab.com/mattsnippets/balance)  
