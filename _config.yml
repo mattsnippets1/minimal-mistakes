@@ -110,7 +110,7 @@ author:
   avatar           : /assets/images/head.jpg
   bio              : "Software Developer"
   location         : "Hungary"
-  email            : info@mattsnippets.com
+  email            : matt@mattsnippets.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

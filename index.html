@@ -1,4 +1,16 @@
 ---
-layout: home
+layout: single
 author_profile: true
 ---
+
+{% include base_path %}
+
+<p class="archive__item-excerpt">These are some of the games I made or participated in their creation.</p>
+
+<div class="grid__wrapper">
+  {% assign sorted_p = site.portfolio | sort:'path' %}  
+  
+  {% for post in sorted_p %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
