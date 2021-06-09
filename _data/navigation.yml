@@ -2,9 +2,5 @@
 main:
   - title: "Portfolio"
     url: /
-  - title: "Blog"
-    url: /archive/
   - title: "About"
     url: /about/
-  - title: "Tags"
-    url: /tags/

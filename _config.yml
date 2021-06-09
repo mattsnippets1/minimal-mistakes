@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Mattsnippets"
 title_separator          : "-"
 name                     : "Mate Meszaros"
-description              : "Matt's developer blog and portfolio site. Portfolio showcase and (occasional) development blog created by Mate Meszaros."
+description              : "Matt's portfolio site created by Mate Meszaros."
 url                      : "https://mattsnippets.com"
 baseurl                  : ""
 repository               : mattsnippets1/mattsnippets1.github.io
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Mate Meszaros"
   avatar           : /assets/images/head.jpg
-  bio              : "Software Developer"
+  bio              : "Video Game Developer"
   location         : "Hungary"
   email            : matt@mattsnippets.com
   links:
