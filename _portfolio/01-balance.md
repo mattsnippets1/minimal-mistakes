@@ -48,6 +48,6 @@ The assets are either freely available or have been purchased from the asset sto
 {% include gallery %}
 
 ## Balance links
-[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_0.3.0.zip)
+[Balance Windows build]({{ site.url }}/assets/download/balance_demo_desktop_0.3.1.zip)
 ## Repository
 [https://gitlab.com/mattsnippets/balance](https://gitlab.com/mattsnippets/balance)  
